@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Calculator </title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="calculator">
+        <div class="display"><input id="displayValue" value="0" type="text" disabled /></div>
+        <div class="main">
+          <div class=" row">
+            <div onClick="calculator.resetDisplayValue()" class="triple button">C</div>
+            <div onClick="calculator.setPercent()" class="triple button">%</div>
+            <div onClick="calculator.calculateWithOperator('/')" data-operator="/" class="triple button operator">÷</div>
+          </div>
+          <div class="row">
+            <div onClick="calculator.setNum('7')" data-num="7" class="button">7</div>
+            <div onClick="calculator.setNum('8')" data-num="8" class="button">8</div>
+            <div onClick="calculator.setNum('9')" data-num="9" class="button">9</div>
+            <div onClick="calculator.calculateWithOperator('*')" data-operator="*" class="button operator">x</div>
+          </div>
+          <div class="row">
+            <div onClick="calculator.setNum(4)" data-num="4" class="button">4</div>
+            <div onClick="calculator.setNum(5)" data-num="5" class="button">5</div>
+            <div onClick="calculator.setNum(6)" data-num="6" class="button">6</div>
+            <div onClick="calculator.calculateWithOperator('-')" data-operator="-" class="button operator">-</div>
+          </div>
+          <div class="row">
+            <div onClick="calculator.setNum(1)" data-num="1" class="button">1</div>
+            <div onClick="calculator.setNum(2)" data-num="2" class="button">2</div>
+            <div onClick="calculator.setNum(3)" data-num="3" class="button">3</div>
+            <div onClick="calculator.calculateWithOperator('+')" data-operator="+" class="button operator">+</div>
+          </div>
+          <div class=" row">
+            <div onClick="calculator.setNum(0)" data-num="0" class="triple button zero">0</div>
+            <div onClick="calculator.setDot()" class="triple button">.</div>
+            <div onClick="calculator.doOperator('=')" data-operator="=" class="triple button operator">=</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
+
+
+<!--<div class="container flex flex-col items-center mx-auto m-w-20">
+  <div class="row">
+    <input class="input" type="text" />
+  </div>
+  <div class="row">
+    <button data-key="8" class="double button">Clear</button>
+    <button data-key="37" class="double button">%</button>
+  </div>
+  <div class="row">
+    <button data-key="55" class="button">7</button>
+    <button data-key="56" class="button">8</button>
+    <button data-key="57" class="button">9</button>
+    <button data-key="42" class="button">*</button>
+  </div>
+  <div class="row">
+    <button data-key="52" class="button">4</button>
+    <button data-key="53" class="button">5</button>
+    <button data-key="54" class="button">6</button>
+    <button data-key="47" class="button">/</button>
+  </div>
+  <div class="row">
+    <button data-key="49" class="button">1</button>
+    <button data-key="50" class="button">2</button>
+    <button data-key="51" class="button">3</button>
+    <button data-key="43" class="button">+</button>
+  </div>
+  <div class="row">
+    <button data-key="48" class="button">0</button>
+    <button data-key="110" class="button">.</button>
+    <button data-key="13" class="button">=</button>
+    <button data-key="45" class="button">-</button>
+  </div>
+</div>-->
